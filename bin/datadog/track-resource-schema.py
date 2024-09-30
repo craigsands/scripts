@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
     db.close()
 
-    webhook_url = os.getenv("DEFAULT_SLACK_NOTIFICATIONS_WEBHOOK_URL")
+    webhook_url = os.getenv("SLACK_WEBHOOK_URL")
     if webhook_url and (added_resource_name_set or removed_resource_name_set):
         output = "\n".join(
             [
